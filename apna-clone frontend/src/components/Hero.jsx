@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import heroImage from "../assets/hero-phone.png";
 
-import labourLogo from '../assets/logos/labour.png';
+import labourLogo from 'src/assets/logos/labour.png';
 import aicteLogo from '../assets/logos/aicte.png';
 import dpiitLogo from '../assets/logos/dpiit.png';
 import shoppersstopLogo from '../assets/logos/shoppersstop.png';
