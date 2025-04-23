@@ -1,47 +1,54 @@
 import React from 'react';
 import TrendingCard from './TrendingCard';
 
+// Importing images
+import freshersImage from '../assets/logos/freshers.png';
+import wfhImage from '../assets/logos/wfh.png';
+import partTimeJobsImage from '../assets/logos/part-time-jobs.png';
+import womenJobsImage from '../assets/logos/women-jobs.png';
+import fullTimeJobsImage from '../assets/logos/Full-time.png';
+
 const trendingData = [
   {
     id: 1,
     trendingNumber: 1,
     title: 'Jobs for Freshers',
-    imageUrl: 'src/assets/logos/freshers.png',
+    imageUrl: freshersImage, // Using imported image
     bgColor: '#E84118',
-    textColor: 'white'
+    textColor: 'white',
   },
   {
     id: 2,
     trendingNumber: 2,
     title: 'Work from home Jobs',
-    imageUrl: 'src/assets/logos/wfh.png',
+    imageUrl: wfhImage, // Using imported image
     bgColor: '#3498DB',
-    textColor: 'white'
+    textColor: 'white',
   },
   {
     id: 3,
     trendingNumber: 3,
     title: 'Part time Jobs',
-    imageUrl: 'src/assets/logos/part-time-jobs.png',
+    imageUrl: partTimeJobsImage, // Using imported image
     bgColor: '#9B59B6',
-    textColor: 'white'
+    textColor: 'white',
   },
   {
     id: 4,
     trendingNumber: 4,
     title: 'Jobs for Women',
-    imageUrl: 'src/assets/logos/women-jobs.png',
+    imageUrl: womenJobsImage, // Using imported image
     bgColor: '#27AE60',
-    textColor: 'white'
+    textColor: 'white',
   },
   {
     id: 5,
     trendingNumber: 5,
     title: 'Full time Jobs',
-    imageUrl: 'src/assets/logos/Full-time.png',
+    imageUrl: fullTimeJobsImage, // Using imported image
     bgColor: '#F39C12',
-    textColor: 'white'
-  }
+    textColor: 'white',
+  },
 ];
 
 const TrendingSection = () => {
@@ -60,7 +67,7 @@ const TrendingSection = () => {
               key={card.id}
               trendingNumber={card.trendingNumber}
               title={card.title}
-              imageUrl={card.imageUrl}
+              imageUrl={card.imageUrl} // Passing imported image URL
               bgColor={card.bgColor}
               textColor={card.textColor}
               onClick={() => console.log(`Clicked on ${card.title}`)}
@@ -75,7 +82,7 @@ const TrendingSection = () => {
             key={card.id}
             trendingNumber={card.trendingNumber}
             title={card.title}
-            imageUrl={card.imageUrl}
+            imageUrl={card.imageUrl} // Passing imported image URL
             bgColor={card.bgColor}
             textColor={card.textColor}
             onClick={() => console.log(`Clicked on ${card.title}`)}

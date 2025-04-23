@@ -2,6 +2,16 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import heroImage from "../assets/hero-phone.png";
 
+import labourLogo from '../assets/logos/labour.png';
+import aicteLogo from '../assets/logos/aicte.png';
+import dpiitLogo from '../assets/logos/dpiit.png';
+import shoppersstopLogo from '../assets/logos/shoppersstop.png';
+import techmahindraLogo from '../assets/logos/techmahindra.png';
+import teleperformanceLogo from '../assets/logos/teleperformance.png';
+import bajajLogo from '../assets/logos/bajaj.png';
+import allianzLogo from '../assets/logos/allianz.png';
+import flipkartLogo from '../assets/logos/flipkart.png';
+
 // Sample suggestions
 const skillSuggestions = [
   "Graphic Designer",
@@ -177,9 +187,9 @@ export default function Hero() {
               <div className="text-center mb-10">
                 <h2 className="text-xl md:text-2xl font-semibold mb-6">Proud to Support</h2>
                 <div className="flex justify-center flex-wrap gap-8 items-center">
-                  <img src="src/assets/logos/labour.png" alt="Labour Ministry" className="h-12" />
-                  <img src="src/assets/logos/aicte.png" alt="AICTE" className="h-12" />
-                  <img src="src/assets/logos/dpiit.png" alt="DPIIT" className="h-12" />
+                <img src={labourLogo} alt="Labour Ministry" className="h-12" />
+                <img src={aicteLogo} alt="AICTE" className="h-12" />
+                <img src={dpiitLogo} alt="DPIIT" className="h-12" />
                 </div>
               </div>
               <div className="text-center mb-6">
@@ -189,12 +199,12 @@ export default function Hero() {
               </div>
               <div className="overflow-hidden relative">
                 <div className="animate-marquee whitespace-nowrap flex items-center gap-10">
-                  <img src="src/assets/logos/shoppersstop.png" alt="Shoppers Stop" className="h-10" />
-                  <img src="src/assets/logos/techmahindra.png" alt="Tech Mahindra" className="h-10" />
-                  <img src="src/assets/logos/teleperformance.png" alt="Teleperformance" className="h-10" />
-                  <img src="src/assets/logos/bajaj.png" alt="Bajaj" className="h-10" />
-                  <img src="src/assets/logos/allianz.png" alt="Allianz" className="h-10" />
-                  <img src="src/assets/logos/flipkart.png" alt="Flipkart" className="h-10" />
+                <img src={shoppersstopLogo} alt="Shoppers Stop" className="h-10" />
+                <img src={techmahindraLogo} alt="Tech Mahindra" className="h-10" />
+                <img src={teleperformanceLogo} alt="Teleperformance" className="h-10" />
+                <img src={bajajLogo} alt="Bajaj" className="h-10" />
+                <img src={allianzLogo} alt="Allianz" className="h-10" />
+                <img src={flipkartLogo} alt="Flipkart" className="h-10" />
                 </div>
               </div>
             </div>

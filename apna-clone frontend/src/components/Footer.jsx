@@ -1,4 +1,9 @@
 import { Link } from "react-router-dom";
+
+import apnaLogo from '../assets/apna-logo.png';
+import googlePlayBadge from '../assets/logos/google-play.png';
+import qrCodeImage from '../assets/logos/qr-code.png';
+
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -14,11 +19,11 @@ const Footer = () => {
         {/* Left Section */}
         <div>
           <div className="flex items-center gap-4 mb-4">
-            <img
-              src="/src/assets/apna-logo.png" // Replace with your actual logo path
-              alt="apna logo"
-              className="w-14 h-14 rounded-xl"
-            />
+          <img
+            src={apnaLogo}
+            alt="apna logo"
+            className="w-14 h-14 rounded-xl"
+          />
             <h2 className="text-lg font-semibold">Follow us on social media</h2>
           </div>
 
@@ -51,16 +56,17 @@ const Footer = () => {
           <p className="text-sm mb-4">Get real time job updates on our App</p>
 
           <div className="flex items-center justify-between gap-4">
-            <img
-              src="/src/assets/logos/google-play.png" // Replace with your Google Play badge
-              alt="Get it on Google Play"
-              className="w-32"
-            />
-            <img
-              src="/src/assets/logos/qr-code.png" // Replace with your QR Code image
-              alt="QR Code"
-              className="w-16 h-16"
-            />
+          <img
+            src={googlePlayBadge}
+            alt="Get it on Google Play"
+            className="w-32"
+          />
+          <img
+            src={qrCodeImage}
+            alt="QR Code"
+            className="w-16 h-16"
+          />
+
           </div>
         </div>
       </div>
